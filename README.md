@@ -593,8 +593,8 @@ zone "janganlupa-ta.c10.pw" {
 - Ubah seluruh string localhost menjadi janganlupa-ta.c10.pw.
 - Tambahkan konfigurasi dibawah
 ```
-@	    IN	NS	semeruc10.pw.
-@       IN  A   10.151.77.92 ; IP MOJOKERTO
+@	    IN	NS	janganlupa-ta.c10.pw.
+@       IN  A   10.151.77.91 ; IP MOJOKERTO
 ```
 7. Lakukan ```service bind9 restart```
 
