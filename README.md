@@ -178,6 +178,8 @@ Terakhir, untuk melakukan perintah ```apt-get update``` pada setiap UML, lakukan
 <br />
 Setelah itu, lakukan ```apt-get update```, dan siap mengerjakan soal selanjutnya
 
+<br /><br /><br />
+
 ### Nomor2
 #### Bu Meguri memerintahkan Anri untuk menjadikan SURABAYA sebagai router, MALANG sebagai DNS Server, TUBAN sebagai DHCP server, serta MOJOKERTO sebagai Proxy server, dan UML lainnya sebagai client. SURABAYA ditunjuk sebagai perantara (DHCP Relay) antara DHCP Server dan client.
 #
@@ -186,7 +188,7 @@ Jawab : <br />
 **Pada UML TUBAN, lakukan** <br />
 ```apt-get install isc-dhcp-server```
 
-Setting DHCP server (TUBAN)
+**Setting DHCP server (TUBAN)**
 1. Ketikkan ```nano /etc/default/isc-dhcp-server```
 2. Masukkan INTERFACES="eth0"
 
@@ -195,7 +197,7 @@ Setting DHCP server (TUBAN)
 **Pada UML SURABAYA, lakukan** <br />
 ```apt-get install isc-dhcp-relay```
 
-SETTING DHCP RELAY (SURABAYA)
+**SETTING DHCP RELAY (SURABAYA)**
 1. ```apt-get update```
 2. ```apt-get install isc-dhcp-relay```
 3. Masukkan IP TUBAN yaitu ```10.151.77.93``` lalu tekan enter
@@ -205,13 +207,10 @@ SETTING DHCP RELAY (SURABAYA)
 
 ![DHCP Surabaya](https://user-images.githubusercontent.com/57977401/100355897-7cc6d880-302d-11eb-95b8-07a6c40cce6d.png)
 
-**Pada UML MALANG, lakukan**
-```apt-get install bind9```
-
-**Pada UML MOJOKERTO, lakukan**
+**Pada UML MOJOKERTO, lakukan**<br />
 ```apt-get install squid``` dan ```apt-get install apache2-utils```
 
-SETTING SQUID (MOJOKERTO)
+**SETTING SQUID (MOJOKERTO)**
 1. Cek status squid dengan ```service squid status```
 2. Buat backup Squid dengan mengetikkan ```mv /etc/squid/squid.conf /etc/squid/squid.conf.bak```
 3. Buka file squid dengan mengetikkan ``` nano /etc/squid/squid.conf```
@@ -225,6 +224,12 @@ http_access allow all
 5. Lakukan ```service squid restart```
 
 ![Squid Mojokerto](https://user-images.githubusercontent.com/57977401/100373127-3ed5ae80-3045-11eb-956c-534adde5091e.png)
+<br />
+
+**Pada UML MALANG, lakukan**<br />
+```apt-get install bind9```
+
+<br /><br /><br />
 
 ### Nomor3
 #### Client pada subnet 1 mendapatkan range IP dari 192.168.0.10 sampai 192.168.0.100 dan 192.168.0.110 sampai 192.168.0.200.
@@ -256,6 +261,8 @@ subnet 192.168.0.0 netmask 255.255.255.0 {
 ![Test Gresik](https://user-images.githubusercontent.com/57977401/100374822-ce7c5c80-3047-11eb-9c46-c48801efd4cb.png)
 ![Test Sidoarjo](https://user-images.githubusercontent.com/57977401/100374826-cf14f300-3047-11eb-9563-cd5e21498cbb.png)
 
+<br /><br /><br />
+
 ### Nomor4
 #### Client pada subnet 3 mendapatkan range IP dari 192.168.1.50 sampai 192.168.1.70.
 #
@@ -284,6 +291,8 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 
 ![Test Banyuwangi](https://user-images.githubusercontent.com/57977401/100375185-5e220b00-3048-11eb-87fd-b314fba145a8.png)
 ![Test Madiun](https://user-images.githubusercontent.com/57977401/100375190-5f533800-3048-11eb-9c98-1534670b1463.png)
+
+<br /><br /><br />
 
 ### Nomor5
 #### Client mendapatkan DNS Malang dan DNS 202.46.129.2 dari DHCP.
@@ -330,6 +339,8 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 ![Test Banyuwangi](https://user-images.githubusercontent.com/57977401/100375185-5e220b00-3048-11eb-87fd-b314fba145a8.png)
 ![Test Madiun](https://user-images.githubusercontent.com/57977401/100375190-5f533800-3048-11eb-9c98-1534670b1463.png)
 
+<br /><br /><br />
+
 ### Nomor6
 #### Client di subnet 1 mendapatkan peminjaman alamat IP selama 5 menit, sedangkan client pada subnet 3 mendapatkan peminjaman IP selama 10 menit.
 #
@@ -375,6 +386,8 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 ![Test Banyuwangi](https://user-images.githubusercontent.com/57977401/100375185-5e220b00-3048-11eb-87fd-b314fba145a8.png)
 ![Test Madiun](https://user-images.githubusercontent.com/57977401/100375190-5f533800-3048-11eb-9c98-1534670b1463.png)
 
+<br /><br /><br />
+
 ### Nomor7
 #### User autentikasi milik Anri memiliki format:
 - User : userta_yyy
@@ -418,6 +431,8 @@ http_access allow USERS
 
 ![Nomor 7 Test Google com](https://user-images.githubusercontent.com/57977401/100375833-629af380-3049-11eb-962e-b0bf555b9849.png)
 
+<br /><br /><br />
+
 ### Nomor8
 #### Setiap hari Selasa-Rabu pukul 13.00-18.00. Bu Meguri membatasi penggunaan internet Anri hanya pada jadwal yang telah ditentukan itu saja.
 #
@@ -455,6 +470,8 @@ visible_hostname mojokerto
 
 ![Nomor 8 test](https://user-images.githubusercontent.com/57977401/100375937-92e29200-3049-11eb-8727-05b4ddf513e5.png)
 
+<br /><br /><br />
+
 ### Nomor9
 #### Setiap hari Selasa-Kamis pukul 21.00 - 09.00 keesokan harinya (sampai Jumat jam 09.00). Agar Anri bisa fokus mengerjakan TA,
 #
@@ -488,6 +505,8 @@ http_access allow DEADLINE2
 2.Coba masuk ke situs its.ac.id. Apabila muncul error seperti dibawah, maka konfigurasi sudah benar
 
 ![Nomor 8 test](https://user-images.githubusercontent.com/57977401/100375937-92e29200-3049-11eb-8727-05b4ddf513e5.png)
+
+<br /><br /><br />
 
 ### Nomor10
 #### Setiap dia mengakses google.com, maka akan di redirect menuju monta.if.its.ac.id agar Anri selalu ingat untuk mengerjakan TA🙂.
@@ -524,6 +543,8 @@ http_access deny all
 
 ![Nomor 10 test](https://user-images.githubusercontent.com/57977401/100376092-df2dd200-3049-11eb-88d4-6ab46476ea15.png)
 
+<br /><br /><br />
+
 ### Nomor11
 #### Bu Meguri meminta Anri untuk mengubah error page default squid
 #
@@ -547,6 +568,8 @@ Jawab : <br />
 2. Coba masuk ke situs its.ac.id. Apabila muncul error seperti dibawah, maka konfigurasi sudah benar
 
 ![Nomor 8 test](https://user-images.githubusercontent.com/57977401/100375937-92e29200-3049-11eb-8727-05b4ddf513e5.png)
+
+<br /><br /><br />
 
 ### Nomor12
 #### Karena Bu Meguri dan Anri adalah tipe orang pelupa, maka untuk memudahkan mereka, Anri memiliki ide ketika menggunakan proxy cukup dengan mengetikkan domain janganlupa-ta.yyy.pw dan memasukkan port 8080.
