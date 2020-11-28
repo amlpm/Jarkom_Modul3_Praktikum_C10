@@ -19,7 +19,7 @@
 10. [Nomor 10](#Nomor10)
 11. [Nomor 11](#Nomor11)
 12. [Nomor 12](#Nomor12)
-13. [Revisi] (#Revisi)
+13. [Revisi](#Revisi)
 #
 
 ### Nomor1
