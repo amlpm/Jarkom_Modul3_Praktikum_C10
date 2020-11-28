@@ -19,6 +19,7 @@
 10. [Nomor 10](#Nomor10)
 11. [Nomor 11](#Nomor11)
 12. [Nomor 12](#Nomor12)
+13. [Revisi Squid] (#Revisi)
 #
 
 ### Nomor1
@@ -606,3 +607,20 @@ zone "janganlupa-ta.c10.pw" {
 2. Coba masuk ke situs its.ac.id. Apabila muncul halaman seperti dibawah (dapat masuk ke situs its.ac.id), maka konfigurasi sudah benar
 
 ![Nomor 12 Testing 2](https://user-images.githubusercontent.com/57977401/100376103-e359ef80-3049-11eb-8f11-8305cddfa904.png)
+
+<br /><br /><br />
+
+### Revisi
+#### Bagian ini merupakan revisi dari Squid.conf dan Acl.conf setelah demo modul 3
+
+**Pada squid.conf**
+- Menggabungkan seluruh konfigurasi seperti gambar dibawah
+- Menggunakan perintah kebalikan untuk nomor 8 dan 9, yaitu men-deny saat waktu yang tidak dapat diakses, sehingga konfigurasi menjadi seperti gambar dibawah
+
+![Mojokerto Revisi Squid](https://user-images.githubusercontent.com/57977401/100516586-e119a180-31bf-11eb-813a-ae1184969d19.png)
+
+
+**Pada acl.conf**
+- Menggunakan perintah kebalikan untuk nomor 8 dan 9, yaitu men-deny saat waktu yang tidak dapat diakses, sehingga konfigurasi menjadi seperti gambar dibawah
+
+![Mojokerto Revisi Acl](https://user-images.githubusercontent.com/57977401/100516583-dfe87480-31bf-11eb-8b0b-40eab31e9c47.png)
