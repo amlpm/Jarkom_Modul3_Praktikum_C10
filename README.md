@@ -622,5 +622,10 @@ zone "janganlupa-ta.c10.pw" {
 
 **Pada acl.conf**
 - Menggunakan perintah kebalikan untuk nomor 8 dan 9, yaitu men-deny saat waktu yang tidak dapat diakses, sehingga konfigurasi menjadi seperti gambar dibawah
+* Sabtu, minggu, dan senin dari jam 00:00 hingga 23:59 tidak boleh diakses
+* Selasa dan rabu dari jam 09:01 hingga 12:59 tidak boleh diakses
+* Selasa, rabu, dan kamis dari jam 18:01-20:59 tidak boleh diakses
+* Kamis dari jam 09:01 hingga 20:59 tidak boleh diakses
+* Jumat dari jam 09:01 hingga 23:59 tidak boleh diakses
 
 ![Mojokerto Revisi Acl](https://user-images.githubusercontent.com/57977401/100516583-dfe87480-31bf-11eb-8b0b-40eab31e9c47.png)
